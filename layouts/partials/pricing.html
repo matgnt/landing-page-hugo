@@ -8,8 +8,20 @@
                 <h2>{{ .Title }}</h2>
                 <br/>
                 {{ .Content }}
-                PRICING
                 <br/>
+
+                {{ $length := len $.Site.Data.pricing }}
+                <div class="Rtable Rtable--{{ $length }}cols Rtable--collapse">
+
+                    {{ range $index, $content := $.Site.Data.pricing }}
+                        <div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>{{ $content.name }} {{ $index }}</h3></div>
+                        {{ range $i, $feature := $content.features}}
+                            {{ $c :=add $i 1 }}
+                            <div style="order:{{ $c }};" class="Rtable-cell">{{ $feature.name }} i: {{ $i }} c: {{ $c }}</div>
+                        {{ end }}
+                    {{ end }}
+
+                </div>
 
             </div>
         </div>
