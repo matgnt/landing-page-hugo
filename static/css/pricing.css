@@ -138,3 +138,26 @@
     margin-bottom: 1em;
   }
 }
+
+/* added for pricing */
+button.pricing {
+    background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+    background-repeat: repeat-x;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px none transparent;
+    border-radius: 4px;
+}
+button.pricing:hover, button.pricing:active {
+    background-image: linear-gradient(to bottom,#449d44 0,#419641 100%);
+}
+button.pricing > a {
+    color: #fff;
+}

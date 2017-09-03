@@ -1,6 +1,8 @@
 [
     {
         "name": "Free",
+        "link": "signup/free",
+        "linkText": "Signup",
         "features": [
             {
                 "name": "Free-Feature 1",
@@ -18,6 +20,8 @@
     },
     {
         "name": "Basic",
+        "link": "signup/basic",
+        "linkText": "Signup",
         "features": [
             {
                 "name": "Basic-Feature1",
@@ -35,6 +39,8 @@
     },
     {
         "name": "Premium",
+        "link": "signup/premium",
+        "linkText": "Signup",
         "features": [
             {
                 "name": "Premium-Feature1",
