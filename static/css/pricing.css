@@ -22,7 +22,7 @@
   padding: 0.8em 1.2em;
   overflow: hidden;
   list-style: none;
-  border: solid 3px white;
+  border: solid 1px white;
   background: rgba(112, 128, 144, 0.2);
 }
 .Rtable-cell > h1,
@@ -62,48 +62,10 @@
 .Rtable-cell {
   margin: -3px 0 0 -3px;
   background-color: white;
-  border-color: #e2e6e9;
+  border-color: #ebccd1;
 }
 /* Cell styles
 ================================== */
-.Rtable-cell--dark {
-  background-color: slategrey;
-  border-color: #5a6673;
-  color: white;
-}
-.Rtable-cell--dark > h1,
-.Rtable-cell--dark > h2,
-.Rtable-cell--dark > h3,
-.Rtable-cell--dark > h4,
-.Rtable-cell--dark > h5,
-.Rtable-cell--dark > h6 {
-  color: white;
-}
-.Rtable-cell--medium {
-  background-color: #b8c0c8;
-  border-color: #a9b3bc;
-}
-.Rtable-cell--light {
-  background-color: white;
-  border-color: #e2e6e9;
-}
-.Rtable-cell--highlight {
-  background-color: lightgreen;
-  border-color: #64e764;
-}
-.Rtable-cell--alert {
-  background-color: darkorange;
-  border-color: #cc7000;
-  color: white;
-}
-.Rtable-cell--alert > h1,
-.Rtable-cell--alert > h2,
-.Rtable-cell--alert > h3,
-.Rtable-cell--alert > h4,
-.Rtable-cell--alert > h5,
-.Rtable-cell--alert > h6 {
-  color: white;
-}
 .Rtable-cell--head {
   color: #a94442;
   background-color: #f2dede;
@@ -122,8 +84,8 @@
   color: #a94442;
 }
 .Rtable-cell--foot {
-  background-color: #b8c0c8;
-  border-color: #a9b3bc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 /* Responsive
 ==================================== */
@@ -141,23 +103,22 @@
 
 /* added for pricing */
 button.pricing {
+    width: 100%;
     background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
     background-repeat: repeat-x;
-    color: #fff;
-    border-radius: 4px;
-    padding: 6px 12px;
+    border-radius: 6px;
+    padding: 12px 12px;
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
-    cursor: pointer;
-    border: 1px none transparent;
-    border-radius: 4px;
+    border: none;
 }
 button.pricing:hover, button.pricing:active {
     background-image: linear-gradient(to bottom,#449d44 0,#419641 100%);
 }
-button.pricing > a {
+button.pricing > a, a:hover, a:active, a:visited {
     color: #fff;
+    text-decoration: none;
 }
