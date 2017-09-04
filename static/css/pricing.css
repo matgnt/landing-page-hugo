@@ -1,7 +1,13 @@
-/* Variables
-================================== */
 /* Tables
+The responsive tables part has been taken from
+https://css-tricks.com/accessible-simple-responsive-tables/
+and changed to our needs.
+We focus on "Responsive collapse (by column)" in this case here.
+The original LESS code is compiled to CSS here and all (most) not
+relevant parts are removed. Still some of the basics (e.g. Rtable-cell--foot)
+are kept in here in case we use them later.
 ================================== */
+
 /*@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700); */
 
 .Rtable {
@@ -101,7 +107,7 @@
   }
 }
 
-/* added for pricing */
+/* This part is for the Signup Button in the pricing section. Added by matgnt@gmail.com */
 button.pricing {
     width: 100%;
     background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
@@ -118,7 +124,10 @@ button.pricing {
 button.pricing:hover, button.pricing:active {
     background-image: linear-gradient(to bottom,#449d44 0,#419641 100%);
 }
-button.pricing > a, a:hover, a:active, a:visited {
+button.pricing > a,
+button.pricing > a:hover,
+button.pricing > a:active,
+button.pricing > a:visited {
     color: #fff;
     text-decoration: none;
 }
