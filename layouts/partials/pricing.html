@@ -1,4 +1,38 @@
 <!-- Pricing Section -->
+{{ range where .Data.Pages "Section" "pricing" | first 1 }}
+<div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-offset-2"> 
+                <h2 class="title">{{ .Title }}</h2>
+                <p class="sub-title">{{ .Content }}</p>
+            </div>  
+            <div class="row">
+                {{ $length := len $.Site.Data.pricing }}
+                {{ range $index, $content := $.Site.Data.pricing }}
+                {{ if eq $index 0 }}
+                    <div class="col-md-3 col-md-offset-2">
+                {{ else }}
+                    <div class="col-md-3">
+                {{ end }}
+                    <div class="table-columns">
+                        <ul class="price">
+                            <li class="header">{{ $content.name }}</li>
+                            <li class="grey">$ 9.99 / year</li>
+                            {{ range $i, $feature := $content.features}}
+                                <li class="list-group-item" style="height:50px;">{{ $feature.name }}</li>
+                            {{ end }}
+                            <li class="grey"><a href="{{ $content.link }}" class="button">{{ $content.linkText }}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                {{ end }}
+
+            </div>
+        </div>
+    </div>
+
+{{ end }}
+
 <section id="pricing" class="container content-section text-center">
     {{ range where .Data.Pages "Section" "pricing" | first 1 }}
         <div class="row">
