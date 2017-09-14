@@ -101,7 +101,7 @@ Add custom CSS by specifying file(s) using `custom_css` param e.g. files such as
 
 ```toml
 [params]
-custom_css = ["css/local.css","css/media.css"]
+custom_css = ["/css/local.css","/css/media.css"]
 ```
 
 # Demo
