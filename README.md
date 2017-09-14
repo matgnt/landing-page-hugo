@@ -41,7 +41,7 @@ Draft: false
 We specialize in bespoke widgets, built to your specification.
 ```
 
-Then place a matching image in `static/img/services/` - e.g. `static/img/services/widgets.png`
+Then place a matching image in `static/img/` - e.g. `static/img/widgets.png`
 
 ## Pricing Section
 
